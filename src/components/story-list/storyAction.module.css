@@ -1,0 +1,16 @@
+.button {
+  border: 1px solid var(--foreground);
+  padding: var(--spacing-small) var(--spacing-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: var(--color-secondary);
+}

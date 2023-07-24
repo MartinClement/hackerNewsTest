@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #212121;
+  --color-secondary: #848484;
+  --color-reverse: #eee;
+  --fs-regular: 1.6rem;
+  --fs-big: 2.4rem;
+  --fs-small: 1.2rem;
+  --fw-regular: 600;
+  --fw-bold: 900;
+  --fw-thin: 400;
+
+  --spacing-base: 8px;
+  --spacing-small: calc(1 * var(--spacing-base));
+  --spacing-medium: calc(2 * var(--spacing-base));
+  --spacing-large: calc(3 * var(--spacing-base));
+  --spacing-x-large: calc(4 * var(--spacing-base));
+
+  --accent-color: #3732b3;
+  --foreground: #cfcfcf;
+  --background: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  background: var(--foreground);
+  font-family: Arial, sans;
+}
+
+main#root {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  font-size: var(--fs-regular);
+}
