@@ -1,27 +1,33 @@
 # React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+In order to setup this little project as fast as possible, I've been using vite and its `react-ts` template
+```sh
+npm create vite@latest hacker-news-test -- --template react-ts
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Run the application
+Nothing special!
+```sh
+npm install
+npm run dev
+```
+
+### Additional libraries
+| Name   | Description                                       | Doc                               |
+|--------|---------------------------------------------------|-----------------------------------|
+| dayjs | Lightweight library to ease Js Date manipulation  | https://day.js.org/               |
+| axios  | Ajax library to easy Ajax call                    | https://axios-http.com/docs/intro |
+
+
+# Context
+This project aimed to use the [hackernew API](https://hackernews.api-docs.io/v0/overview/introduction) to gather the most populars posts.
+
+# Requirements
+- [x] Use ReactJS
+- [x] Use Typescript
+- [x] Use Hackernew API
+
+# Required Functionalities
+- [x] Show 20 last posts at load
+- [x] Show next 20 posts on demand
+- [x] Refresh the list each 20 sec
+- [x] Refresh the list on demand

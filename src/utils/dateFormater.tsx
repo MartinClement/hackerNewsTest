@@ -1,10 +1,10 @@
-import daysjs from "dayjs";
+import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
-daysjs.extend(relativeTime);
+dayjs.extend(relativeTime);
 
 const fromNow = (date: number | string | Date): string => {
-  return daysjs(date).fromNow();
+  return dayjs(date).fromNow();
 }
 
 export {
